@@ -1,0 +1,68 @@
+
+/* Header */
+
+header{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+
+    background-color: $secundario;
+
+    p{
+        order:0;
+    }
+    
+    
+    a img{
+        width: 13rem;
+        height: 90%;
+        padding:1rem;
+        
+        order:1;
+        
+    }
+
+
+    select{
+        
+        appearance: none;     
+        background-image: url(/img/translate.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        border-radius: 1rem;
+
+        
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+        padding-left: 1rem;
+        width: 29rem;
+        height: 4rem;
+
+        cursor: pointer;
+        order:2;
+        
+    }
+
+    @media(max-width: 768px){
+    
+     flex-direction: column;
+
+     
+
+     p{
+         order:1;
+         margin-top: 0;
+     }
+     a{
+         order:0;
+     }
+      select{
+            width: 90%;
+            margin-bottom: 1rem;
+        }
+   
+    }
+  
+}

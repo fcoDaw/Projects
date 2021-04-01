@@ -1,0 +1,36 @@
+
+
+/* Contenedor */
+
+.contenedor{
+
+    margin: 0 auto;
+    width: 90%;
+
+    text-align: justify;
+
+    h1{
+        padding: 0 ;
+       
+    }
+
+    @media(max-width: 768px){
+        
+        h1{ 
+           font-size: 3.5rem;
+           
+        }
+        span{
+            font-size: 2rem;
+        }
+    
+    }
+
+    
+    .info{
+        b{
+            font-weight: normal;
+        }
+    }
+
+}

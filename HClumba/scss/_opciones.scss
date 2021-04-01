@@ -1,0 +1,23 @@
+/* Opciones*/
+
+
+.opciones{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 2rem;
+
+    margin-top: 10rem;
+    
+}
+
+.opcion{
+
+    button{
+        width: 18rem;
+        height: 10rem;
+    }
+    button h3{
+        color: $primario;
+    }
+    
+}
