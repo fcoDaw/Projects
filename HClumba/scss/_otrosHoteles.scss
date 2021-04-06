@@ -1,0 +1,47 @@
+
+.linkHoteles{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;    
+    margin-top: 4rem;
+        
+}
+
+.hotel{
+    padding: 2rem;
+
+    img{
+        width: 20.8rem;
+        height: 8rem;
+    }
+
+    .w-clumba img{
+        width: 14rem;
+        height: 7rem;
+    }
+    .w-serrano img{
+        width: 17rem;
+    }
+    
+    @media(max-width: 768px){
+        
+        img{
+            width: 12rem;
+            height: 8rem;
+        }
+        
+        .w-clumba img{
+            width: 12rem;
+            height: 7rem;
+        }
+        .w-serrano img{
+            width: 12rem;
+        }
+
+       
+    }
+  
+}
+
