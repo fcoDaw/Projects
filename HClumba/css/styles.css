@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*Colores*/
 /* Fuentes */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap");
 /* Globales*/
 html {
@@ -24,7 +23,12 @@ body {
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, white), color-stop(66%, #eeecec));
   background: linear-gradient(0deg, white 36%, #eeecec 66%);
-  height: 120vh;
+}
+
+hr {
+  color: white;
+  margin-top: 8rem;
+  width: 90%;
 }
 
 /*Tipografía */
@@ -159,9 +163,18 @@ header select {
   .opciones {
     -ms-grid-columns: (1fr);
         grid-template-columns: repeat(1, 1fr);
+    margin-top: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
+.opcion {
+  margin-bottom: 3rem;
+  text-align: center;
+  /*Para alinear el icono restaurante*/
+}
 
 .opcion button {
   width: 18rem;
@@ -183,18 +196,15 @@ header select {
 @media (max-width: 768px) {
   .opcion button {
     width: 70%;
-    margin-left: 5rem;
-    margin-right: 1rem;
   }
 }
 
 /* Cuandro información */
 .cuadroInfo {
-  position: relative;
+  margin: 0 auto;
+  top: 5rem;
   height: auto;
   width: 132rem;
-  margin: 0 auto;
-  top: 3rem;
   background: #EEECEC;
   -webkit-box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
@@ -204,17 +214,6 @@ header select {
   .cuadroInfo {
     width: 100%;
   }
-}
-
-.cuandoInfo:before {
-  border: 25px solid #EEECEC;
-  content: '';
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-  position: absolute;
-  bottom: -48px;
-  left: calc(50% - 25px);
 }
 
 /*Configuarción para cada opción de la info*/
@@ -232,5 +231,96 @@ header select {
 
 .infoOpciones1 li {
   margin-left: 1.5rem;
+}
+
+.linkHoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+
+.hotel {
+  padding: 2rem;
+}
+
+.hotel img {
+  width: 20.8rem;
+  height: 8rem;
+}
+
+.hotel .w-clumba img {
+  width: 14rem;
+  height: 7rem;
+}
+
+.hotel .w-serrano img {
+  width: 17rem;
+}
+
+@media (max-width: 768px) {
+  .hotel img {
+    width: 12rem;
+    height: 8rem;
+  }
+  .hotel .w-clumba img {
+    width: 12rem;
+    height: 7rem;
+  }
+  .hotel .w-serrano img {
+    width: 12rem;
+  }
+}
+
+footer {
+  background-color: #eeecec;
+  margin-top: 10rem;
+}
+
+footer .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-info a {
+  text-decoration: none;
+  color: #ee204a;
+}
+
+footer .footer-info img {
+  width: 50rem;
+}
+
+footer .footer-info span {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  footer .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-info a {
+    margin-top: 1rem;
+  }
+  footer .footer-info img {
+    margin-top: 1rem;
+    width: auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

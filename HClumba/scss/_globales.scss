@@ -20,8 +20,12 @@ body{
     
     color: $gris;
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 36%, rgba(238,236,236,1) 66%);
-   
-    height: 120vh;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 36%, rgba(238,236,236,1) 66%);   
+}
 
+hr{
+    color:white;
+
+    margin-top: 8rem;
+    width: 90%;
 }
