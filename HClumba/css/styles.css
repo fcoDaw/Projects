@@ -282,6 +282,7 @@ header select {
 footer {
   background-color: #eeecec;
   margin-top: 10rem;
+  padding: 2rem;
 }
 
 footer .footer-info {
@@ -301,7 +302,7 @@ footer .footer-info a {
 }
 
 footer .footer-info img {
-  width: 50rem;
+  width: 40rem;
 }
 
 footer .footer-info span {
