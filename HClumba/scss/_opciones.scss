@@ -8,7 +8,13 @@
     margin-top: 10rem;
     justify-self: center;
     
+
+    @media(max-width: 768px){
+        grid-template-columns: repeat(1,1fr);
+         
+    }
 }
+
 
 .opcion{
 
@@ -20,6 +26,22 @@
         color: $primario;
     }
     
+    button i{
+        font-size: 3rem;
+    }
+    /*Para alinear el icono restaurante*/
+    button .mt-10 {
+        margin-top: 1rem;
+    }
+
+    @media(max-width: 768px){
+      
+      button{
+        width: 70%;
+        margin-left: 5rem;
+        margin-right: 1rem;
+      }  
+    }
 }
 
 
@@ -34,6 +56,11 @@
 
     background: $secundario;
     box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+
+    @media(max-width: 768px){
+        width: 100%;
+
+    }
 }
 
 .cuandoInfo:before{

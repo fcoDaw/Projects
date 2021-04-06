@@ -24,8 +24,7 @@ body {
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, white), color-stop(66%, #eeecec));
   background: linear-gradient(0deg, white 36%, #eeecec 66%);
-  width: 100%;
-  height: 200vh;
+  height: 120vh;
 }
 
 /*Tipografía */
@@ -156,6 +155,14 @@ header select {
       justify-self: center;
 }
 
+@media (max-width: 768px) {
+  .opciones {
+    -ms-grid-columns: (1fr);
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
 .opcion button {
   width: 18rem;
   height: 12rem;
@@ -163,6 +170,22 @@ header select {
 
 .opcion button h3 {
   color: #ee204a;
+}
+
+.opcion button i {
+  font-size: 3rem;
+}
+
+.opcion button .mt-10 {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .opcion button {
+    width: 70%;
+    margin-left: 5rem;
+    margin-right: 1rem;
+  }
 }
 
 /* Cuandro información */
@@ -175,6 +198,12 @@ header select {
   background: #EEECEC;
   -webkit-box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .cuadroInfo {
+    width: 100%;
+  }
 }
 
 .cuandoInfo:before {
