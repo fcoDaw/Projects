@@ -1,12 +1,12 @@
-/* Opciones*/
-
+/* Opciones y cuadros de información*/
 
 .opciones{
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    gap: 2rem;
-
+    grid-template-columns: repeat(7,1fr);
+    gap: 1rem;
+    
     margin-top: 10rem;
+    justify-self: center;
     
 }
 
@@ -14,10 +14,54 @@
 
     button{
         width: 18rem;
-        height: 10rem;
+        height: 12rem;
     }
     button h3{
         color: $primario;
     }
     
+}
+
+
+/* Cuandro información */
+
+.cuadroInfo{
+    position: relative;
+    height: auto;
+    width: 132rem;
+    margin: 0 auto;
+    top: 3rem;
+
+    background: $secundario;
+    box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+
+.cuandoInfo:before{
+    border: 25px solid $secundario;
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -48px;
+    left: calc(50% - 25px);
+}
+
+
+/*Configuarción para cada opción de la info*/
+
+.infoOpciones{
+    padding: 1rem;
+    margin: 0 auto;
+    display: none; /* Así ocultamos el otro contenido*/
+
+}
+.infoOpciones1{
+    padding: 1rem;
+    margin: 0 auto;
+
+    li{
+        margin-left: 1.5rem;
+    }
+   
 }

@@ -25,7 +25,7 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, white), color-stop(66%, #eeecec));
   background: linear-gradient(0deg, white 36%, #eeecec 66%);
   width: 100%;
-  height: 150vh;
+  height: 200vh;
 }
 
 /*Tipografía */
@@ -144,21 +144,64 @@ header select {
   font-weight: normal;
 }
 
-/* Opciones*/
+/* Opciones y cuadros de información*/
 .opciones {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 2rem;
+  -ms-grid-columns: (1fr);
+      grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
   margin-top: 10rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .opcion button {
   width: 18rem;
-  height: 10rem;
+  height: 12rem;
 }
 
 .opcion button h3 {
   color: #ee204a;
+}
+
+/* Cuandro información */
+.cuadroInfo {
+  position: relative;
+  height: auto;
+  width: 132rem;
+  margin: 0 auto;
+  top: 3rem;
+  background: #EEECEC;
+  -webkit-box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+}
+
+.cuandoInfo:before {
+  border: 25px solid #EEECEC;
+  content: '';
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -48px;
+  left: calc(50% - 25px);
+}
+
+/*Configuarción para cada opción de la info*/
+.infoOpciones {
+  padding: 1rem;
+  margin: 0 auto;
+  display: none;
+  /* Así ocultamos el otro contenido*/
+}
+
+.infoOpciones1 {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.infoOpciones1 li {
+  margin-left: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
