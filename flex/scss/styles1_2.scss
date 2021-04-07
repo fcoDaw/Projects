@@ -1,0 +1,65 @@
+@import "props";
+
+/* Global */
+
+*{
+    box-sizing: border-box;
+}
+
+/* Container */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+div{
+    width: 25%;
+    height: 20rem;
+}
+
+
+/* Colors of each div */
+
+div:nth-child(1){
+    background-color: var(--colorCeleste);
+ }
+ div:nth-child(2){
+    background-color: var(--colorAzul);
+}
+div:nth-child(3){
+    background-color: var(--colorLila);
+}
+div:nth-child(4){
+    background-color: var(--colorNaranja);
+}
+div:nth-child(5){
+    background-color: var(--colorRojo);
+}
+div:nth-child(6){
+    background-color: var(--colorCeleste);
+}
+div:nth-child(7){
+    background-color: var(--colorAzul);
+}
+div:nth-child(8){
+    background-color: var(--colorLila);
+}
+
+
+span { 
+    display: block;
+
+    background-color: rgba(255, 255, 255, .5); 
+    border-radius: 50%; 
+    
+    font-size: 2rem;
+    text-align: center;
+
+    margin-top: 3px;
+    margin-left: 3px;
+    height: auto; 
+    line-height: 3rem; 
+    width: 3rem; 
+}
