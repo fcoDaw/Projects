@@ -1,0 +1,95 @@
+@import "customProp";
+
+/*Globales*/
+
+*{
+    box-sizing: border-box;
+}
+
+/*Tipografía*/
+
+h1,p{
+ color:var(--firstColor);
+ text-align: center;
+}
+
+/*Container*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,auto);
+    gap: 20px;
+
+    max-width: 1000px;
+    width: 90%;
+    margin: 20px auto;
+
+}
+
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    background-color: var(--colorHeader);
+}
+
+/*Hero */
+
+
+.hero{
+    background-color: var(--colorHero);
+    grid-column: span 1;
+    grid-row: span 12;
+}
+
+/* Main Content*/
+
+.mainContent{
+    background-color: var(--colorMain);
+    grid-column: span 3;
+    grid-row: span 20;
+}
+
+/* Sidebar*/
+
+.sideBar{
+    background-color: var(--coloSidebar);
+    grid-column: span 1;
+    grid-row: span 18;
+}
+
+/*Extra Content*/
+
+.extraContent{
+    background-color: var(--colorExtraContent);
+    grid-column: span 3;
+    grid-row: span 10;
+}
+
+/* Related Img */
+
+.relatedImg{
+    background-color: var(--colorImg);
+    grid-column: span 3;
+    grid-row: span 7;
+}
+
+/* Related Post */
+
+.relatedPost{
+    background-color: var(--colorPost);
+    grid-column: span 1;
+    grid-row: span 7;
+}
+
+
+/* Footer */
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    background-color: var(--colorFooter);
+}

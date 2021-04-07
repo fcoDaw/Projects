@@ -1,0 +1,28 @@
+/* Globales */
+
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: 150px;
+    
+}
+
+/* Container */
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    
+    justify-items: center;
+    align-items: center;
+}
