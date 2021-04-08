@@ -24,9 +24,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
 }
 
+div{
+  flex: 1 1 auto;
+}
 /* Colors of each div */
 div:nth-child(1) {
   background-color: var(--colorCeleste);
@@ -66,8 +70,9 @@ span {
   border-radius: 50%;
   font-size: 4rem;
   text-align: center;
-  height: auto;
+  margin: 0 auto;
   line-height: 9rem;
+  height: auto;
   width: 9rem;
 }
 /*# sourceMappingURL=styles1_1.css.map */
