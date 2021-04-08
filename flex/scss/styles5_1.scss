@@ -1,0 +1,50 @@
+@import "props";
+
+/*Exercise 5_1 and 5_2 done*/
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    @media(max-width:600px){
+        flex-direction: column;
+    }
+
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 100%;
+}
+
+div:nth-child(1){
+    background-color: var(--colorCeleste);
+}
+div:nth-child(2){
+    background-color: var(--colorAzul);
+}
+div:nth-child(3){
+    background-color: var(--colorLila);
+}
+div:nth-child(4){
+    background-color: var(--colorNaranja);
+}
+div:nth-child(5){
+    background-color: var(--colorRojo);
+}
+
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+}
+

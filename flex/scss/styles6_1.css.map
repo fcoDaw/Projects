@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,kBAAkB;AAElB,AAAA,KAAK,CAAA;EACD,cAAc,CAAA,OAAC;EACf,WAAW,CAAA,OAAC;EACZ,WAAW,CAAA,OAAC;EACZ,cAAc,CAAA,OAAC;EACf,WAAW,CAAA,OAAC;EACZ,aAAa,CAAA,OAAC;CACjB",
+    "sources": [
+        "styles6_1.scss",
+        "_props.scss"
+    ],
+    "names": [],
+    "file": "styles6_1.css"
+}
