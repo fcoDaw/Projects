@@ -1,22 +1,22 @@
 @import "props";
 
 /* Global */
-*{
+* {
     box-sizing: border-box;
     color:var(--colorBlanco)
 }
 
-html,body{
-    min-height: 500px;
-    height: 100%;
+html,body {
+    min-height: 100vh;
+
 }
 
-p{
+p {
     padding: 10px;
 }
 
 /* Header */
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,17 +24,15 @@ header{
    
 }
 /* Container */
-.container{
+.container {
     display: flex;
-    height: 100%;
 
     @media(max-width:600px){
         flex-direction: column;
-        height: 40%;
     }
 }
 
-.sideBar{
+.sideBar {
    display: flex;
    flex-direction: column;
    background-color: var(--colorAzul);
@@ -47,7 +45,7 @@ header{
     }
 
 }
-a{
+a {
     display: block;
     line-height: 40px;
     border-bottom: 2px solid rgba(255,255,255,.3);
@@ -55,7 +53,7 @@ a{
 }
 
 
-.mainContent{
+.mainContent {
     display: flex;
     background-color: var(--colorLila);
     margin-left: auto;
@@ -69,7 +67,7 @@ a{
 
 /* Footer */
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
