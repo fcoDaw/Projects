@@ -1,73 +1,92 @@
 @import "props";
-
-/* Global */
-* {
+  
+  /* Global */
+  * {
     box-sizing: border-box;
-    color:var(--colorBlanco)
-}
-p {
+    color: var(--colorBlanco);
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  html,body{
+      height: 100%;
+      min-height: 100vh;
+  }
+  p {
     padding: 10px;
-}
+  }
+  
 
-/* Header */
-header {
+  /* Header */
+
+  header {
     display: flex;
     background-color: var(--colorCeleste);
-   
-}
-
-h1{
+    padding: 30px;
+  }
+  
+  h1 {
     flex: 1 1 auto;
     text-align: center;
-}
-/* Container */
-.container {
+  }
+  
+  /* Container */
+
+  .container {
     display: flex;
-    height: 84vh;
-    @media(max-width:600px){
+    height: calc(100% - 135px);
+  }
+  
+  @media (max-width: 600px) {
+    .container {
         flex-direction: column;
     }
-}
-
-.sideBar {
-   display: flex;
-   flex-direction: column;
-   background-color: var(--colorAzul);
-   font-size: 1.3rem;
-   flex: 1 1 400px;
-   @media(max-width:600px){
+  }
+  
+  .sideBar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorAzul);
+    font-size: 1.3rem;
+    flex: 1 1 400px;
+  }
+  
+  @media (max-width: 600px) {
+    .sideBar {
         flex: 1 1 0;
-        order:2;
+        order: 2;
     }
-
-}
-
-a {
+  }
+  
+  a {
     line-height: 40px;
-    border-bottom: 2px solid rgba(255,255,255,.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
     text-decoration: none;
-}
-
-.mainContent {
+  }
+  
+  .mainContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: var(--colorLila);
     margin-left: auto;
     margin-right: auto;
     flex: 1 1 auto;
-    @media(max-width:600px){
+  }
+  
+  @media (max-width: 600px) {
+    .mainContent {
         flex: 3 1 auto;
-        order:1;
+        order: 1;
     }
-}
-
-
-/* Footer */
-
-footer {
+  }
+  
+  /* Footer */
+  
+  footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--colorNaranja);
-
-}
-
+  }
