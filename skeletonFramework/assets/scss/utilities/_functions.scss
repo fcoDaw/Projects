@@ -1,0 +1,29 @@
+/* BUTTON */
+
+%btn {
+    color: var(--cWhite);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 5px 0;
+    margin: 2px auto;
+    width: 100px;
+}
+
+.btn_success {
+    @extend %btn;
+    background-color: var(--cBlue);
+}
+.btn_confirm {
+    @extend %btn;
+    background-color: var(--cGreen);
+}
+
+.btn_alert {
+    @extend %btn;
+    background-color: var(--cOrange);
+}
+.btn_cancel {
+    @extend %btn;
+    background-color:var(--cRed);
+}
