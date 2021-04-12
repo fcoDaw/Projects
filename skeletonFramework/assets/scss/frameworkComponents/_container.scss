@@ -1,0 +1,17 @@
+@import "cProperties";
+
+/* Container */
+
+@mixin container($width){
+    max-width: $wScreen;
+    width: $width;
+    margin: 2rem auto;
+}
+
+.container-100 {
+    @include container(100%);
+}
+
+.container-90 {
+    @include container(90%);
+}
