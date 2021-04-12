@@ -1,0 +1,240 @@
+/* GRID */
+.grid {
+    display:grid;
+    gap:2rem;
+    margin: 2rem auto;
+}
+
+
+/* BIG SIZE for Computer and TV */
+.col-1 {
+    grid-template-columns: repeat(1,1fr);
+}
+.col-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+.col-3 {
+    grid-template-columns: repeat(3,1fr);
+}
+.col-4 {
+    grid-template-columns: repeat(4,1fr);
+}
+.col-5 {
+    grid-template-columns: repeat(5,1fr);
+}
+.col-6 {
+    grid-template-columns: repeat(6,1fr);
+}
+.col-7 {
+    grid-template-columns: repeat(7,1fr);
+}
+.col-8 {
+    grid-template-columns: repeat(8,1fr);
+}
+.col-9 {
+    grid-template-columns: repeat(9,1fr);
+}
+.col-10 {
+    grid-template-columns: repeat(10,1fr);
+}
+.col-11 {
+    grid-template-columns: repeat(11,1fr);
+}
+.col-12 {
+    grid-template-columns: repeat(12,1fr);
+}
+
+.span-1{
+    grid-column: span 1;
+}
+.span-2{
+    grid-column: span 2;
+}
+.span-3{
+    grid-column: span 3;
+}
+.span-4{
+    grid-column: span 4;
+}
+.span-5{
+    grid-column: span 5;
+}
+.span-6{
+    grid-column: span 6;
+}
+.span-7{
+    grid-column: span 7;
+}
+.span-8{
+    grid-column: span 8;
+}.span-9{
+    grid-column: span 9;
+}
+.span-10{
+    grid-column: span 10;
+}
+.span-11{
+    grid-column: span 11;
+}
+.span-12{
+    grid-column: span 12;
+}
+
+/* MEDIUM SIZE for Tablets*/
+
+@media screen and (max-width:992px){
+    .mid-col-1 {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .mid-col-2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mid-col-3 {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .mid-col-4 {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .mid-col-5 {
+        grid-template-columns: repeat(5,1fr);
+    }
+    .mid-col-6 {
+        grid-template-columns: repeat(6,1fr);
+    }
+    .mid-col-7 {
+        grid-template-columns: repeat(7,1fr);
+    }
+    .mid-col-8 {
+        grid-template-columns: repeat(8,1fr);
+    }
+    .mid-col-9 {
+        grid-template-columns: repeat(9,1fr);
+    }
+    .med-col-10 {
+        grid-template-columns: repeat(10,1fr);
+    }
+    .med-col-11 {
+        grid-template-columns: repeat(11,1fr);
+    }
+    .med-col-12 {
+        grid-template-columns: repeat(12,1fr);
+    }
+
+    /*  MID-SPAN */
+
+    .mid-span-1{
+        grid-column: span 1;
+    }
+    .mid-span-2{
+        grid-column: span 2;
+    }
+    .mid-span-3{
+        grid-column: span 3;
+    }
+    .mid-span-4{
+        grid-column: span 4;
+    }
+    .mid-span-5{
+        grid-column: span 5;
+    }
+    .mid-span-6{
+        grid-column: span 6;
+    }
+    .mid-span-7{
+        grid-column: span 7;
+    }
+    .mid-span-8{
+        grid-column: span 8;
+    }.mid-span-9{
+        grid-column: span 9;
+    }
+    .mid-span-10{
+        grid-column: span 10;
+    }
+    .mid-span-11{
+        grid-column: span 11;
+    }
+    .mid-span-12{
+        grid-column: span 12;
+    }
+}
+
+
+
+/* SMALL SIZE for Mobile*/
+
+@media screen and (max-width:576px){
+    .sm-col-1 {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sm-col-2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sm-col-3 {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sm-col-4 {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .sm-col-5 {
+        grid-template-columns: repeat(5,1fr);
+    }
+    .sm-col-6 {
+        grid-template-columns: repeat(6,1fr);
+    }
+    .sm-col-7 {
+        grid-template-columns: repeat(7,1fr);
+    }
+    .sm-col-8 {
+        grid-template-columns: repeat(8,1fr);
+    }
+    .sm-col-9 {
+        grid-template-columns: repeat(9,1fr);
+    }
+    .sm-col-10 {
+        grid-template-columns: repeat(10,1fr);
+    }
+    .sm-col-11 {
+        grid-template-columns: repeat(11,1fr);
+    }
+    .sm-col-12 {
+        grid-template-columns: repeat(12,1fr);
+    }
+
+    /* SM-SPAN */
+    .sm-span-1{
+        grid-column: span 1;
+    }
+    .sm-span-2{
+        grid-column: span 2;
+    }
+    .sm-span-3{
+        grid-column: span 3;
+    }
+    .sm-span-4{
+        grid-column: span 4;
+    }
+    .sm-span-5{
+        grid-column: span 5;
+    }
+    .sm-span-6{
+        grid-column: span 6;
+    }
+    .sm-span-7{
+        grid-column: span 7;
+    }
+    .sm-span-8{
+        grid-column: span 8;
+    }.sm-span-9{
+        grid-column: span 9;
+    }
+    .sm-span-10{
+        grid-column: span 10;
+    }
+    .sm-span-11{
+        grid-column: span 11;
+    }
+    .sm-span-12{
+        grid-column: span 12;
+    }
+}
