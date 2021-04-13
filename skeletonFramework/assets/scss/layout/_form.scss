@@ -2,12 +2,14 @@
     display: block;
     font-size: 1.3rem;
     font-weight: bold;
+    margin-bottom: 0.3rem;
 }
 
 .input, .select {
     padding: 1rem 1.5rem;
     border: 1px solid #bbb;
     border-radius: 4px;
+    margin-bottom: 2rem;
     width: 100%;
 } 
 option{
@@ -19,7 +21,7 @@ textarea {
     width: 100%;
 }
 
-.input:focus, .select:focus {
+.input:focus, .select:focus, textarea {
     border: 1px solid rgb(114, 112, 112);
     outline: none;
 }
