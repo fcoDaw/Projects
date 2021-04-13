@@ -1,4 +1,4 @@
-/* Global  */
+/* Typography  */
 
 html {
     box-sizing: border-box;
@@ -8,19 +8,6 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
-body {
-    font-family: var(--fontOpenSans);
-    font-size: 1.6rem;
-    line-height: 2rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family:var(--fontRoboto);
-    line-height: 2.8rem;
-    margin-top: 0;
-}
-
 
 img{
     width: 100%;

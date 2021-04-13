@@ -1,29 +1,37 @@
 /* BUTTON */
 
 %btn {
-    color: var(--cWhite);
-    text-align: center;
-    font-weight: bold;
-    border-radius: 2px;
-    padding: 5px 0;
-    margin: 2px auto;
-    width: 100px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 4rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  height: 4rem;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+ 
 }
 
-.btn_success {
+.btn{
     @extend %btn;
+    background-color: var(--cWhite);
+}
+
+.btn_blue {
+    @extend %btn;
+    color: var(--cWhite);
     background-color: var(--cBlue);
 }
-.btn_confirm {
-    @extend %btn;
-    background-color: var(--cGreen);
+
+.btn:hover,.btn_blue:hover {
+  color: rgb(78, 35, 35);
+  border-color: #888;
+  outline: 0;
 }
 
-.btn_alert {
-    @extend %btn;
-    background-color: var(--cOrange);
-}
-.btn_cancel {
-    @extend %btn;
-    background-color:var(--cRed);
-}
+

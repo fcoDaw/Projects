@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     
@@ -18,7 +18,7 @@
     </div>
 
     <div class="container-90">
-        <main class="grid col-3 mid-col-2 sm-col-1">
+        <main class="grid xl-col-3 med-col-2 sm-col-1">
             <div class="card-white">Card 1</div>
             <div class="card-white">Card 2</div>
             <div class="card-white">Card 3</div>
@@ -29,8 +29,8 @@
     </div>
 
     <div class="container-90">
-        <div class="grid col-3">
-            <div class="span-2 mid-span-3">
+        <div class="grid xl-col-3">
+            <div class="xl-span-2 med-span-3">
                 <div class="card-white">
                     <h1>LOOOOOoo</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum provident natus 
@@ -47,9 +47,31 @@
                     </p>
                 </div>
             </div>
-            <div class="card-white span-1 mid-span-3">
+            <div class="card-white xl-span-1 med-span-3">
                 <h3>Registrate</h3>
-            
+                <form action="">
+                    <div class="grid ">
+                        <label class="label" for="">Nombre  <input  class="input" type="text" placeholder="Nombre"></label>
+                        <label class="label" for="">Password <input  class="input" type="email" placeholder="Correo Electrónico"></label>
+                        <label class="label" for="">Eliga su opción: 
+                            <select class="select">
+                                <option value="1"> Eliga la opción </option>
+                                <option value="2">Perro</option>
+                                <option value="3">Gato</option>
+                                <option value="4">Otros...</option>
+                            </select>  
+                        </label>
+                        <label class="label" for="">Comentario
+                            <textarea name="" id="" cols="60" rows="10"></textarea>
+                        </label>
+                       
+                    </div>
+                    <div class="">
+                        <button class="btn">Login</button>
+                        <button class="btn_blue">Register</button>
+                    </div>
+                    
+                </form>
             </div>
         </div>
     </div>

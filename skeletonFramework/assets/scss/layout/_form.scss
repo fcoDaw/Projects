@@ -1,0 +1,25 @@
+.label{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.input, .select {
+    padding: 1rem 1.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    width: 100%;
+} 
+option{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+}
+
+.input:focus, .select:focus {
+    border: 1px solid rgb(114, 112, 112);
+    outline: none;
+}
