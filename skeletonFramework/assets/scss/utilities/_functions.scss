@@ -28,10 +28,22 @@
     background-color: var(--cBlue);
 }
 
+.btn a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
 .btn:hover,.btn_blue:hover {
   color: rgb(78, 35, 35);
   border-color: #888;
   outline: 0;
 }
 
+.btn:hover a{
+  color: #4e2323;
+  text-decoration: none;
+}
 
