@@ -1,0 +1,47 @@
+.header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid var(--cWhite);
+
+    & p {
+        order: 0;
+    }
+    & .material-icons {
+        display: inline-block;
+        vertical-align: text-bottom;
+        font-size: 2rem;
+    }
+    & img{
+        width: 130px;
+        height: 60px;
+        order: 1;
+        object-fit: fill;
+    }
+
+    & select {
+        background-color: white;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        padding: 0 1rem;
+        width: 260px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    & select option {
+        font-weight: normal;
+    }
+
+    @media  screen and (max-width:768px) {
+        & p {
+            order: 1;
+        }
+
+        & img {
+            order: 0;
+        }
+    }
+}
+
