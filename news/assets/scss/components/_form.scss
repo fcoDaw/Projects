@@ -6,6 +6,10 @@
 
 }
 
+.form h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
 .form__center {
     display: flex;
     flex-direction: column;
@@ -19,7 +23,6 @@
 .form__group .input  {
     width: 100%;
 }
-
 
 .form__btn input {
     width: 100%;

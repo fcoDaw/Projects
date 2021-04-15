@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container_title {
   color: var(--cBlue);
   text-align: center;
@@ -61,7 +68,92 @@ img {
 }
 
 .btn {
+  margin-top: 2rem;
   width: 80%;
+}
+
+/* Modal basic with a link*/
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#btn__modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#btn__modal2:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#btn__modal3:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: #c9c9c9;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  height: 400px;
+  width: 400px;
+}
+
+.modal__header a {
+  float: right;
+  color: var(--cBlack);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.modal__body {
+  text-align: center;
+  height: 100%;
+}
+
+.modal__body__info {
+  text-align: justify;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  margin: 5rem 2rem;
+}
+
+.modal__body__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.material-icons {
+  display: inline-block;
+  vertical-align: text-bottom;
+  font-size: 2.5rem;
 }
 
 .form {
@@ -70,6 +162,11 @@ img {
   -webkit-box-shadow: 0px 0px 30px rgba(221, 221, 211, 0.3);
           box-shadow: 0px 0px 30px rgba(221, 221, 211, 0.3);
   padding: 4rem;
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .form__center {
@@ -96,4 +193,4 @@ img {
 .form__btn input {
   width: 100%;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=stylesWelcome2.css.map */

@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome2 to Eturistic</title>
-    <link rel="stylesheet" href="assets/css/frameworkEturistic.css">
-    <link rel="stylesheet" href="assets/css/stylesWelcome2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/scss/stylesWelcome2.css">
 </head>
 <body>
     
@@ -22,7 +23,7 @@
                 loading="lazy"/>    
             </main>
             <article class="blog__info xl-span-1">
-                <h3>News</h3>
+                <h2>News</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Ab veritatis nihil corporis fugit hic quos eligendi, minima id, vitae 
                     repudiandae animi laborum maxime, maiores est natus quisquam? Laborum, ut sunt.
@@ -39,23 +40,46 @@
 
     <div class="container-90">
         <main  class="card grid xl-col-3 med-col-2 sm-col-1">
-            <div class="card__photo">
+           
+            <div class="card__photo med-span-2 sm-span-1">
                 <div class="card__imagen" >
                     <img class=""
                     src="https://source.unsplash.com/random/?sig=1"
                     alt="Test Image"
                     loading="lazy"/>
                 </div>
-                <div class="card__info " >
+                <div class="card__info" >
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque laborum 
                         eius quae culpa, unde iusto sapiente nemo veniam praesentium, dolores 
                         magni corrupti, numquam voluptatibus deleniti similique repudiandae est ad?
                     </p>
-                    <input class="btn" type="submit" value="Más info">
-                </div>
-             
-            </div>
-            <div class="card__photo">
+                    <button class="btn">
+                        <a href="#btn__modal">Más info</a>
+                    </button>
+                    <div id="btn__modal" class="modal">
+                        <div class="modal-contenido">
+                            <div class="modal__header">
+                                <a href="#">X</a>
+                            </div>
+                            <div class="modal__body">
+                                <h2>Información </h2>
+                                <div class="modal__body__info">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque laborum 
+                                        eius quae culpa, unde iusto sapiente nemo veniam praesentium, dolores 
+                                        magni corrupti, numquam voluptatibus deleniti similique repudiandae est ad?
+                                    </p>
+                                </div>
+                            </div> <!--modal__body-->
+                            <div class="modal__body__footer">
+                                <p><i class="material-icons">badge</i> Fco Hidalgo </p>
+                                <p><i class="material-icons">phone</i>+34666666666 </p>
+                            </div>
+                        </div><!--modal-contenido-->
+                    </div><!--modal-->  
+                </div><!--card__info-->
+            </div> <!-- card__photo-->
+
+            <div class="card__photo med-span-2 sm-span-1">
                 <div class="card__imagen" >
                     <img class=""
                     src="https://source.unsplash.com/random/?sig=2"
@@ -67,9 +91,31 @@
                         eius quae culpa, unde iusto sapiente nemo veniam praesentium, dolores 
                         magni corrupti, numquam voluptatibus deleniti similique repudiandae est ad?
                     </p>
-                    <input class="btn" type="submit" value="Más info">
-                </div>        
-            </div>
+                    <button class="btn">
+                        <a href="#btn__modal2">Más info</a>
+                    </button>
+                    <div id="btn__modal2" class="modal">
+                        <div class="modal-contenido">
+                            <div class="modal__header">
+                                <a href="#">X</a>
+                            </div>
+                            <div class="modal__body">
+                                <h2>Información </h2>
+                                <div class="modal__body__info">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque laborum 
+                                        eius quae culpa, unde iusto sapiente nemo veniam praesentium, dolores 
+                                        magni corrupti, numquam voluptatibus deleniti similique repudiandae est ad?
+                                    </p>
+                                </div>
+                            </div> <!--modal__body-->
+                            <div class="modal__body__footer">
+                                <p><i class="material-icons">badge</i> Fco Hidalgo </p>
+                                <p><i class="material-icons">phone</i>+34666666666 </p>
+                            </div>
+                        </div><!--modal-contenido-->
+                    </div><!--modal-->  
+                </div><!--card__info-->
+            </div> <!-- card__photo-->
 
             <div class="card__photo med-span-2 sm-span-1">
                 <div class="card__imagen" >
@@ -83,11 +129,34 @@
                         eius quae culpa, unde iusto sapiente nemo veniam praesentium, dolores 
                         magni corrupti, numquam voluptatibus deleniti similique repudiandae est ad?
                     </p>
-                    <input class="btn" type="submit" value="Más info">
-                </div>
-                 
-            </div>
+                    <button class="btn">
+                        <a href="#btn__modal3">Más info</a>
+                    </button>
+                    <div id="btn__modal3" class="modal">
+                        <div class="modal-contenido">
+                            <div class="modal__header">
+                                <a href="#">X</a>
+                            </div>
+                            <div class="modal__body">
+                                <h2>Información </h2>
+                                <div class="modal__body__info">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque laborum 
+                                        eius quae culpa, unde iusto sapiente nemo veniam praesentium, dolores 
+                                        magni corrupti, numquam voluptatibus deleniti similique repudiandae est ad?
+                                    </p>
+                                </div>
+                            </div> <!--modal__body-->
+                            <div class="modal__body__footer">
+                                <p><i class="material-icons">badge</i> Fco Hidalgo </p>
+                                <p><i class="material-icons">phone</i>+34666666666 </p>
+                            </div>
+                        </div><!--modal-contenido-->
+                    </div><!--modal-->  
+                </div><!--card__info-->
+            </div> <!-- card__photo-->
+
             <div class=" form xl-span-3 med-span-2 sm-span-1">
+                <h2>Envianos tu opinión</h2>
                     <form  class="form__center" action="">
                         <div class="form__group">
                             <label class="label" for="name"> Nombre </label>
@@ -108,8 +177,7 @@
                         </div>
                         
                     </form>
-            </div>
-          
+            </div> 
         </main>
     </div> <!-- Card-->
 </body>
