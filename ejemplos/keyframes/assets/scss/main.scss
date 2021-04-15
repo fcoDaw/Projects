@@ -1,0 +1,35 @@
+.cuadrado{
+    position: relative;
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    animation: movCuadrado 4s 2s ease infinite;
+}
+
+@keyframes movCuadrado {
+    0% { 
+        background-color: blue;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: cadetblue;
+        left: 300px;
+        top:0;
+    }
+    50% {
+        background-color: brown;
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        background-color: burlywood;
+        left: 0;
+        top: 300px;
+    }
+    100%{
+        background-color: burlywood;
+        left: 0;
+        top: 0;
+    }
+}

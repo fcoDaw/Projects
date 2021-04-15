@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba modal</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <a href="#miModal">Abrir Modal</a>
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <a href="#">X</a>
+            <h2>Prueba Modal</h2>
+            <p>Ver funcionamiento del modal</p>
+        </div>  
+    </div>
+
+    <div class="popup center">
+        <div class="icon">
+            <i class="logo material-icons">done</i>
+        </div>
+        <div class="title">
+            Success
+        </div>
+        <div class="description">
+           Este diseño es un modal más complicado con transition  y transform.
+           Y un poco de js.
+        </div>
+        <div class="dismiss-btn"> 
+             <button id="dismiss-popup-btn">
+                Dismiss
+             </button>
+        </div>
+    </div>
+    <div class="center">
+        <button id="open-popup-btn">
+            Open popup
+        </button>
+    </div>
+
+    <script src="assets/js/modal.js"></script>
+</body>
+</html>
