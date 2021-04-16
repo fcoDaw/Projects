@@ -1,18 +1,195 @@
 /* Colors */
 :root {
-  --cPrimario: #ee204a;
+  --cPrimario: #db002ce5;
   --cSecundario: #f5f5f5;
   --cGrayClub:#707070;
+  --cBlack: #000;
 }
 
-body {
-  background-color: var(--cSecundario);
+h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
 }
 
-p {
+* {
   color: var(--cGrayClub);
 }
 
+body {
+  background-color: var(--cWhite);
+  height: 120vh;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 2.5rem;
+  color: var(--cGrayClub);
+}
+
+/*Container*/
+.container {
+  background-color: white;
+  max-width: 120vh;
+}
+
+.welcome-container {
+  padding: 2rem;
+}
+
+.welcome-container h1 b {
+  color: var(--cPrimario);
+  font-size: 7.2rem;
+}
+
+.welcome-container h1 i {
+  font-style: normal;
+  font-size: 7.2rem;
+}
+
+.welcome-container p {
+  margin-top: 3rem;
+}
+
+.welcome-container p b {
+  color: var(--cPrimario);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 320px) {
+  .welcome-container h1 {
+    font-size: 2rem;
+    line-height: 5rem;
+    margin-bottom: 0;
+  }
+  .welcome-container h1 b {
+    font-size: 3rem;
+  }
+  .welcome-container h1 i {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-container h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 0;
+  }
+  .welcome-container h1 b {
+    font-size: 5.8rem;
+  }
+  .welcome-container h1 i {
+    font-size: 5.8rem;
+  }
+}
+
+/* Pdfs Container*/
+.pdfs-container h3 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5rem 2rem;
+}
+
+/* Options*/
+.options {
+  position: relative;
+  border: 1px solid black;
+  margin: 0 2rem;
+  min-height: 400px;
+  clear: both;
+}
+
+.option {
+  max-height: 120px;
+  width: auto;
+  border: 1px solid blue;
+}
+
+.option label {
+  position: relative;
+  left: 0;
+  top: 42px;
+  color: var(--cRed);
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  padding: 4.1rem 4.2rem;
+}
+
+.option:nth-child(2) label {
+  padding: 4.1rem 5.8rem;
+}
+
+.option:nth-child(4) label {
+  padding: 4.1rem 6rem;
+}
+
+.option .material-icons {
+  display: inline-block;
+  vertical-align: text-bottom;
+  font-size: 2.5rem;
+  margin-right: 4px;
+}
+
+.option-container {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  background: var(--cWhite);
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.option-container > * {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.option [type="radio"] {
+  opacity: 0;
+}
+
+[type="radio"]:focus ~ label {
+  outline: 2px solid var(--cGrayClub);
+}
+
+[type="radio"]:checked ~ label {
+  background: #f1f0f0;
+  z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .option-container {
+  background-color: var(--cSecundario);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  z-index: 1;
+}
+
+[type="radio"]:checked ~ label ~ .option-container > * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.grid {
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+/* Header */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,6 +200,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #eeecec;
   padding: 1rem 3rem;
   border-bottom: 1px solid var(--cWhite);
 }
@@ -51,10 +229,17 @@ p {
 
 .header select {
   background-color: white;
+  background-image: url(/assets/img/translate.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-size: 2.7rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-size: 1.5rem;
   border-radius: 5px;
   padding: 0 1rem;
-  width: 260px;
+  width: 20%;
   height: 40px;
   cursor: pointer;
 }
@@ -64,6 +249,12 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .header p {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -73,6 +264,12 @@ p {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+  .header select {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 /*# sourceMappingURL=main.css.map */

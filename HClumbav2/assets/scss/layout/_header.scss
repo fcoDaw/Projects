@@ -1,7 +1,10 @@
+/* Header */
+
 .header { 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #eeecec;
     padding: 1rem 3rem;
     border-bottom: 1px solid var(--cWhite);
 
@@ -21,11 +24,16 @@
     }
 
     & select {
-        background-color: white;
+        background-color: white;    
+        background-image: url(/assets/img/translate.png);
+        background-repeat: no-repeat;
+        background-position: 95% center;
+        background-size: 2.7rem;
+        appearance: none; 
         font-size: 1.5rem;
         border-radius: 5px;
         padding: 0 1rem;
-        width: 260px;
+        width: 20%;
         height: 40px;
         cursor: pointer;
     }
@@ -34,14 +42,24 @@
         font-weight: normal;
     }
 
-    @media  screen and (max-width:768px) {
-        & p {
-            order: 1;
-        }
+}
 
-        & img {
-            order: 0;
-        }
+@media  screen and (max-width:768px) {
+    .header{
+        flex-direction: column;
+    } 
+    
+    .header p {
+        order: 1;
+    }
+
+    .header img {
+        order: 0;
+    }
+
+    .header select {
+        width: 100%;
+        order: 3;
     }
 }
 

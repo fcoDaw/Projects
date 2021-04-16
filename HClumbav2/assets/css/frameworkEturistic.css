@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 :root {
   /* Fonts */
   --fontRoboto:'Roboto',sans-serif;
+  --fontRobotoSlab: 'Roboto Slab', 'Roboto', serif;
   --fontOpenSans:'Open Sans', sans-serif;
   --fontLato: 'Lato', sans-serif;
   /* Colors  */
@@ -273,8 +275,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--fontRoboto);
+  font-family: var(--fontRobotoSlab);
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* DISPLAY */
@@ -296,13 +299,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Container */
 .container-100 {
-  max-width: var(--wScreen);
   width: 100%;
   margin: 2rem auto;
 }
 
 .container-90 {
-  max-width: var(--wScreen);
   width: 90%;
   margin: 2rem auto;
 }
@@ -316,12 +317,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* BIG SIZE for Computer and TV */
-.col-1 {
+.xl-col-1 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(1, 1fr);
 }
 
-.col-2 {
+.xl-col-2 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
 }
@@ -331,52 +332,52 @@ h1, h2, h3, h4, h5, h6 {
       grid-template-columns: repeat(3, 1fr);
 }
 
-.col-4 {
+.xl-col-4 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(4, 1fr);
 }
 
-.col-5 {
+.xl-col-5 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(5, 1fr);
 }
 
-.col-6 {
+.xl-col-6 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(6, 1fr);
 }
 
-.col-7 {
+.xl-col-7 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(7, 1fr);
 }
 
-.col-8 {
+.xl-col-8 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(8, 1fr);
 }
 
-.col-9 {
+.xl-col-9 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(9, 1fr);
 }
 
-.col-10 {
+.xl-col-10 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(10, 1fr);
 }
 
-.col-11 {
+.xl-col-11 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(11, 1fr);
 }
 
-.col-12 {
+.xl-col-12 {
   -ms-grid-columns: (1fr);
       grid-template-columns: repeat(12, 1fr);
 }
 
-xl-.span-1 {
+.xl-span-1 {
   grid-column: span 1;
 }
 
